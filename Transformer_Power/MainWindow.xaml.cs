@@ -16,30 +16,14 @@ using System.Windows.Shapes;
 namespace Transformer_Power
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Greetings.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (LeftButton.IsChecked == true)
-            {
-                MessageBox.Show("Probably not gay.");
-            }
-            else if (RightButton.IsChecked == true)
-            {
-                MessageBox.Show("You are gay.");
-            }
+            frame.Navigate(new Page1());
         }
     }
 }
