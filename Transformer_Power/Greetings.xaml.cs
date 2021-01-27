@@ -24,5 +24,22 @@ namespace Transformer_Power
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (LeftButton.IsChecked == true)
+            {
+                MessageBox.Show("Probably not gay.");
+            }
+            else if (RightButton.IsChecked == true)
+            {
+                MessageBox.Show("You are gay.");
+            }
+        }
     }
 }
